@@ -19,6 +19,7 @@ class CreateTranslationsTable extends Migration
             $table->string('translation');
             $table->boolean('learned')
                 ->default(0);
+            $table->timestamps();
         });
     }
 

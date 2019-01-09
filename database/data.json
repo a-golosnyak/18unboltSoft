@@ -1,0 +1,20 @@
+[
+    {
+        "translation_id": 1,
+        "word": "TestWord1",
+        "translation": "TestTranslation1",
+        "learned": false
+    },
+    {
+        "translation_id": 2,
+        "word": "TestWord2",
+        "translation": "TestTranslation2",
+        "learned": false
+    },
+    {
+        "translation_id": 3,
+        "word": "TestWord3",
+        "translation": "TestTranslation3",
+        "learned": false
+    }
+]
