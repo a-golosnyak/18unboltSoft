@@ -11,15 +11,14 @@ class DataController extends Controller
 {
     public function getData($id)
     {
-/*    	$translation = new Translation;
-
-		$translation->word = 'xxx';
-		$translation->translation = 'yyy';
-		$translation->learned = '0';
-		$translation->save();
-*/
-
-		$translation1 = Translation::all();
+    	if($id == 0)
+    	{
+			$translation1 = Translation::all();
+		}
+		else
+		{
+			$translation1 = Translation::where('translation_id', $id)->get();
+		}
 
         return response()->json($translation1);
     }

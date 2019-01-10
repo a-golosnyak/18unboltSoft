@@ -33,11 +33,11 @@
 
         </style>
         <script>
-            function GetData ()
+            function GetData (val)
             {
                 data = "id=1";
                 request = new ajaxRequest()
-                request.open("GET", "/getdata/5", true)
+                request.open("GET", "/getdata/" + val, true)
                 request.setRequestHeader("Content-type", "application/x-www-form-urlencoded")   // При использовании обьекта FormData это почему-то не нужно
 
                 request.onreadystatechange = function()
@@ -89,7 +89,9 @@
             <input type="submit" value="GetData"">
         </form-->
 
-        <input type="button" value="GetData2" onclick="GetData()">
+        <p><input type="button" value="GetData0" onclick="GetData(0)"></p>
+        <p><input type="button" value="GetData1" onclick="GetData(1)"></p>
+        <p><input type="button" value="GetData2" onclick="GetData(2)"></p>
         <p></p>
         <div id='Data'>
         </div>
