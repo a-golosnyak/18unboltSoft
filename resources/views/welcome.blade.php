@@ -82,7 +82,7 @@
                         dataSource: {   
                             transport: {   
                                 read: {
-                                    type: "GET",
+                                    type: "get",
                                     url: 'http://127.0.0.1:8000/getdata/0',
                                     contentType: "application/json; charset=utf-8",
                                     dataType: "json",
